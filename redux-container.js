@@ -15,11 +15,11 @@ ${NAME}.propTypes = {
 };
 
 function mapDispatchToProps(dispatch){
-    return bindActionCreators({/* actioncreators */}, dispatch);
+    return bindActionCreators({ }, dispatch);
 }
 
-function mapStateToProps(/* {state, state2 }*/){
-    return { /* state, state2 */};
+function mapStateToProps({ }){
+    return { };
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(${NAME});
