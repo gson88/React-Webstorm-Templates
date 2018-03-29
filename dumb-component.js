@@ -2,7 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const ${NAME} = (props) => {
-  return (<div/>);
+  return (
+    <div className="${NAME}">
+      
+    </div>
+  );
 };
 
 ${NAME}.propTypes = {
