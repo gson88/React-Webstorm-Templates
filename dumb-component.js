@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const ${NAME} = (props) => {
+const ${NAME} = props => {
   return (
     <div className="${NAME}">
-      
+
     </div>
   );
 };

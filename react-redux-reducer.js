@@ -6,7 +6,7 @@ function getInitialState() {
 
 const defaultState = getInitialState();
 
-export default (state = defaultState, action) => {
+export default (state = defaultState, action = {}) => {
   switch (action.type) {
     default:
       return state;

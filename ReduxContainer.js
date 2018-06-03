@@ -3,32 +3,30 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
-class ${NAME} extends Component {
-  componentDidMount () {
+class ReduxContainer extends Component {
+  componentDidMount() {
 
   }
 
-  render () {
+  render() {
     return (
-      <div className="${NAME}">
+      <div className="ReduxContainer">
 
       </div>
     );
   }
 }
 
-${NAME}.propTypes = {
+ReduxContainer.propTypes = {
   children: PropTypes.any
 };
 
 const mapDispatchToProps = dispatch => {
-  return bindActionCreators({
-
-  }, dispatch);
+  return bindActionCreators({}, dispatch);
 };
 
-const mapStateToProps = ({  }) => {
+const mapStateToProps = ({}) => {
   return {};
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(${NAME});
+export default connect(mapStateToProps, mapDispatchToProps)(ReduxContainer);
