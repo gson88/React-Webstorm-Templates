@@ -6,6 +6,7 @@ function getInitialState() {
 
 const defaultState = getInitialState();
 
+/** @param state {${DATA_CLASS_NAME}} */
 export default (state = defaultState, action = {}) => {
   switch (action.type) {
     default:
