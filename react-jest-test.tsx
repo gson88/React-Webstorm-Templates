@@ -2,20 +2,19 @@ import React from 'react';
 import { shallow } from 'enzyme';
 
 //sut
-import ${CLASS_NAME} from '../${CLASS_NAME}';
+import ${CLASS_NAME}, { Props } from '../${CLASS_NAME}';
 
-const setup = (propOverrides, alterPropsCallback) => {
-  const props = {
+const setup = (propOverrides: Partial<Props> = {}, alterPropsCallback = null) => {
+  const props: Props = {
     ...propOverrides
   };
-  
+
   if (alterPropsCallback) {
     alterPropsCallback(props);
   }
-  
-  /** @type {ShallowWrapper} */
+
   const wrapper = shallow(<${CLASS_NAME} {...props} />);
-  
+
   return {
     wrapper,
     props,
